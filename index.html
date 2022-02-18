@@ -22,9 +22,10 @@
             </aside>
             <h1>Alex Fedosov</h1>
             <p>
-                I’m a software developer based in Novosibirsk, Russia. Having more than 8 years of
-                experience, I have worked with a wide variety of technologies and frameworks.
-                My&nbsp;main focus areas are vanilla JavaScript / TypeScript and WebGL.
+                I’m a software developer based in Novosibirsk, Russia. Having more than
+                <span class="experience">8</span> years of experience, I have worked with a wide
+                variety of technologies and frameworks. My&nbsp;main focus areas are vanilla
+                JavaScript / TypeScript and WebGL.
             </p>
             <p>
                 I’m very experienced in developing complex graphics-heavy web applications, and I’m
@@ -205,6 +206,12 @@
                 </ul>
             </section>
         </main>
+
+        <script>
+            document.querySelector('.experience').innerText = String(
+                new Date().getFullYear() - 2014,
+            );
+        </script>
 
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154666547-1"></script>
         <script>
